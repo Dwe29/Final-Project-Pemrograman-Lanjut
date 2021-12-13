@@ -1,0 +1,17 @@
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\bin\Debug\Final_Project_Pemrograman_Lanjut.exe.config
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\bin\Debug\Final_Project_Pemrograman_Lanjut.exe
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\bin\Debug\Final_Project_Pemrograman_Lanjut.pdb
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final Project Pemrograman Lanjut.csproj.AssemblyReference.cache
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\MainWindow.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\App.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut_MarkupCompile.cache
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut_MarkupCompile.lref
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\MainWindow.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut.g.resources
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut.Properties.Resources.resources
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final Project Pemrograman Lanjut.csproj.GenerateResource.cache
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final Project Pemrograman Lanjut.csproj.CoreCompileInputs.cache
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut.exe
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut.pdb
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\LoginWindow.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\LoginWindow.baml

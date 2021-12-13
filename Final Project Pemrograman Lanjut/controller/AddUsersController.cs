@@ -29,7 +29,7 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             }
             else
             {
-                MessageBox.Show("Registrasi Gagal!!!");
+                MessageBox.Show("Registrasi Gagal!");
             }
         }
     }

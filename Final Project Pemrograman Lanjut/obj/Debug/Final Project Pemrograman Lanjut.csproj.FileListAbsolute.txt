@@ -15,3 +15,6 @@ D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman La
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut.pdb
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\LoginWindow.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\LoginWindow.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut_Content.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\RegisterWindow.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\RegisterWindow.baml

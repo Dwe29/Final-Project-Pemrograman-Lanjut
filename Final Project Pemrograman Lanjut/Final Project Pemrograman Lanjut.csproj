@@ -54,12 +54,19 @@
             <DependentUpon>App.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Compile Include="controller\AddUsersController.cs" />
+        <Compile Include="controller\LoginUsersController.cs" />
+        <Compile Include="model\ModelTemplate.cs" />
+        <Compile Include="model\UsersModel.cs" />
         <Compile Include="view\LoginWindow.xaml.cs">
           <DependentUpon>LoginWindow.xaml</DependentUpon>
         </Compile>
         <Compile Include="view\MainWindow.xaml.cs">
           <DependentUpon>MainWindow.xaml</DependentUpon>
           <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="view\RegisterWindow.xaml.cs">
+          <DependentUpon>RegisterWindow.xaml</DependentUpon>
         </Compile>
     </ItemGroup>
     <ItemGroup>
@@ -80,15 +87,27 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="controller" />
-      <Folder Include="model" />
-    </ItemGroup>
-    <ItemGroup>
       <Page Include="view\LoginWindow.xaml" />
       <Page Include="view\MainWindow.xaml">
         <Generator>MSBuild:Compile</Generator>
         <SubType>Designer</SubType>
       </Page>
+      <Page Include="view\RegisterWindow.xaml" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Image\bck.png" />
+      <Content Include="Image\home.png" />
+      <Content Include="Image\icons8-google-48.png" />
+      <Content Include="Image\logout.png" />
+      <Content Include="Image\sapi 5.png" />
+      <Content Include="Image\sapi2.png" />
+      <Content Include="Image\sapi3.png" />
+      <Content Include="Image\sapi4.png" />
+      <Content Include="Image\sapi6.png" />
+      <Content Include="Image\sapi7.png" />
+      <Content Include="Image\sp1.png" />
+      <Content Include="Image\user.png" />
+      <Content Include="Image\zyro-image.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

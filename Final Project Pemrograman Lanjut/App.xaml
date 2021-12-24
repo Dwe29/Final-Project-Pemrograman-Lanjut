@@ -2,8 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut"
-             StartupUri="view/LoginWindow.xaml">
+             StartupUri="view/MainWindow.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

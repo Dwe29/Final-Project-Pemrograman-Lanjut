@@ -45,9 +45,10 @@ namespace Final_Project_Pemrograman_Lanjut.model
                     _command.CommandText = "SELECT * FROM " + table + " WHERE " + query;
                 }
 
-                SqlDataAdapter sda = new SqlDataAdapter(_command);
+                var sda = new SqlDataAdapter(_command);
                 sda.Fill(ds, table);
             }
+            
             catch (SqlException)
             {
                 ds = null;

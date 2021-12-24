@@ -32,9 +32,9 @@
                                 Foreground="White"
                                 BorderBrush="#13591A" Margin="75,30,75,5" Click="btnLogin_Click" />
                     </StackPanel>
-                    <Image x:Name="imgIconLogin" Source="/Image/zyro-image.png" Height="302" Width="272"
+                    <Image x:Name="imgIconLogin" Source="/img/zyro-image.png" Height="302" Width="272"
                            Canvas.Left="-374" Canvas.Top="-25" />
-                    <Image x:Name="googleicon" Source="/Image/icons8-google-48.png" Height="15" Width="12"
+                    <Image x:Name="googleicon" Source="/Img/icons8-google-48.png" Height="15" Width="12"
                            Canvas.Left="120" Canvas.Top="177" />
                 </Canvas>
             </StackPanel>

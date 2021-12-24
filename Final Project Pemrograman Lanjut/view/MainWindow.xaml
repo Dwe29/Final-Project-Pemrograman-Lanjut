@@ -5,8 +5,115 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" MinHeight="768" MinWidth="1024">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#5B9978">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Ter-nak" FontSize="24" FontWeight="Bold" Foreground="White"
+                   HorizontalContentAlignment="Center" />
+
+            <DockPanel Name="CowPage" Grid.Row="1" Height="50" MouseDown="CowPage_OnMouseDown">
+                <Label Content="Sapi" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="GoathPage" Grid.Row="2" Height="50" MouseDown="GoathPage_OnMouseDown">
+                <Label Content="Kambing" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="ChickenPage" Grid.Row="3" Height="50" MouseDown="ChickenPage_OnMouseDown">
+                <Label Content="Ayam" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="Logout" Grid.Row="6" Height="50" MouseDown="Logout_OnMouseDown">
+                <Label Content="LogOut" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,4" />
+            </DockPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#FFF1F1F1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <DockPanel Grid.Column="0">
+                    <TextBox Name="TbSearch" Text="Search Item" Foreground="Gray" Height="20" Margin="20,0,0,0"
+                             GotFocus="TbSearch_OnGotFocus" />
+                </DockPanel>
+
+                <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">
+                    <Label Content="User" VerticalContentAlignment="Center" />
+                    <Image Source="/img/ic_account.png" Width="25" Height="25" />
+                </DockPanel>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="10">
+
+                <Frame Name="FrmMain" NavigationUIVisibility="Hidden" Source="CowPage.xaml">
+
+                </Frame>
+            </Grid>
+
+            <!-- <Grid Grid.Row="1"> -->
+            <!--     <Grid.ColumnDefinitions> -->
+            <!--         <ColumnDefinition Width="*" /> -->
+            <!--         <ColumnDefinition Width="*" /> -->
+            <!--         <ColumnDefinition Width="*" /> -->
+            <!--         <ColumnDefinition Width="*" /> -->
+            <!--     </Grid.ColumnDefinitions> -->
+            <!-- -->
+            <!--     <Grid> -->
+            <!--         <Grid.RowDefinitions> -->
+            <!--             <RowDefinition /> -->
+            <!--             <RowDefinition /> -->
+            <!--         </Grid.RowDefinitions> -->
+            <!-- -->
+            <!--         <Grid Grid.Row="0"> -->
+            <!--             <Border BorderBrush="White" BorderThickness="0 0 1 0"> -->
+            <!--                 <TextBlock FontSize="30" Text="R$ 860,90" Foreground="Black" Margin="15" /> -->
+            <!--             </Border> -->
+            <!--         </Grid> -->
+            <!--          -->
+            <!--         <Grid Grid.Row="1"> -->
+            <!--             <Border BorderBrush="White" BorderThickness="0 0 1 0"> -->
+            <!--                 <TextBlock FontSize="30" Text="R$ 860,90" Foreground="Black" Margin="15" /> -->
+            <!--             </Border> -->
+            <!--         </Grid> -->
+            <!--     </Grid> -->
+            <!--     <Border BorderBrush="White" BorderThickness="0 0 1 0" Grid.Column="1"> -->
+            <!--         <TextBlock FontSize="30" Text="R$ 750,90" Foreground="Black" Margin="15" /> -->
+            <!--     </Border> -->
+            <!--     <Border BorderBrush="White" BorderThickness="0 0 1 0" Grid.Column="2"> -->
+            <!--         <TextBlock FontSize="30" Text="R$ 60,90" Foreground="Black" Margin="15" /> -->
+            <!--     </Border> -->
+            <!--     <Border BorderBrush="White" BorderThickness="0 0 1 0" Grid.Column="3"> -->
+            <!--         <TextBlock FontSize="30" Text="R$ 865,90" Foreground="Black" Margin="15" /> -->
+            <!--     </Border> -->
+            <!-- </Grid> -->
+        </Grid>
     </Grid>
 </Window>

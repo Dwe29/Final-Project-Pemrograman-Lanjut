@@ -59,6 +59,7 @@
     <Compile Include="controller\ProdukControllerChicken.cs" />
     <Compile Include="controller\ProdukControllerCow.cs" />
     <Compile Include="controller\ProdukControllerGoath.cs" />
+    <Compile Include="model\DataProduct.cs" />
     <Compile Include="model\ModelTemplate.cs" />
     <Compile Include="model\ProdukModelChicken.cs" />
     <Compile Include="model\ProdukModelCow.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="view\GoathPage.xaml.cs">
       <DependentUpon>GoathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="view\GoathProduct.cs" />
     <Compile Include="view\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -118,6 +118,54 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\Lobster-Regular.ttf" />
+    <Resource Include="img\kambingB1.jpg" />
+    <Resource Include="img\KambingB2.jpg" />
+    <Resource Include="img\KambingB3.jpg" />
+    <Resource Include="img\KambingB4.jpg" />
+    <Resource Include="img\KambingB5.jpg" />
+    <Resource Include="img\KambingB6.jpg" />
+    <Resource Include="img\KambingB7.jpg" />
+    <Resource Include="img\KambingB8.jpg" />
+    <Resource Include="img\kambingE1.jpg" />
+    <Resource Include="img\KambingE2.jpg" />
+    <Resource Include="img\KambingE3.jpg" />
+    <Resource Include="img\KambingE4.jpg" />
+    <Resource Include="img\KambingE5.jpg" />
+    <Resource Include="img\KambingE6.jpg" />
+    <Resource Include="img\KambingE7.jpg" />
+    <Resource Include="img\KambingE8.jpg" />
+    <Resource Include="img\SapiB1.jpeg" />
+    <Resource Include="img\SapiB10.jpg" />
+    <Resource Include="img\SapiB11.jpg" />
+    <Resource Include="img\SapiB12.jpg" />
+    <Resource Include="img\SapiB13.jpg" />
+    <Resource Include="img\SapiB14.jpg" />
+    <Resource Include="img\SapiB15.jpg" />
+    <Resource Include="img\SapiB16.jpg" />
+    <Resource Include="img\SapiB17.jpg" />
+    <Resource Include="img\SapiB18.jpg" />
+    <Resource Include="img\SapiB2.jpeg" />
+    <Resource Include="img\SapiB3.jpg" />
+    <Resource Include="img\SapiB4.jpg" />
+    <Resource Include="img\SapiB5.jpg" />
+    <Resource Include="img\SapiB6.jpg" />
+    <Resource Include="img\SapiB7.jpg" />
+    <Resource Include="img\SapiB8.jpg" />
+    <Resource Include="img\SapiB9.jpg" />
+    <Resource Include="img\ayamK1.jpg" />
+    <Resource Include="img\ayamK2.jpg" />
+    <Resource Include="img\ayamK3.jpg" />
+    <Resource Include="img\ayamK4.jpg" />
+    <Resource Include="img\ayamK5.JPG" />
+    <Resource Include="img\ayamK6.jpg" />
+    <Resource Include="img\ayamK7.jpg" />
+    <Resource Include="img\ayamP1.jpg" />
+    <Resource Include="img\ayamP2.jpg" />
+    <Resource Include="img\ayamP3.jpg" />
+    <Resource Include="img\ayamP4.jpg" />
+    <Resource Include="img\ayamP5.jpg" />
+    <Resource Include="img\ayamP6.jpg" />
+    <Resource Include="img\ayamP7.jpg" />
     <Resource Include="img\logo.png" />
     <Resource Include="img\ternak.png" />
     <Resource Include="img\ic_account.png" />

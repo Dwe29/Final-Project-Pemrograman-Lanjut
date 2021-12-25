@@ -19,7 +19,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
 
         public DataSet ShowProduct()
         {
-            return _template.Select("produk", "SELECT * FROM produk WHERE jenis='kambing'");
+            return _template.Select("produk", "jenis='Kambing'");
         }
     }
 }

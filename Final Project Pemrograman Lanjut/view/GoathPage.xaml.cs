@@ -1,12 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Controls;
+using Final_Project_Pemrograman_Lanjut.controller;
+using Final_Project_Pemrograman_Lanjut.model;
 
 namespace Final_Project_Pemrograman_Lanjut.view
 {
     public partial class GoathPage : Page
     {
+        private ProdukControllerGoath _controller;
         public GoathPage()
         {
+            _controller = new ProdukControllerGoath(this);
             InitializeComponent();
             var product = GetProduct();
             if (product.Count > 0)
@@ -15,26 +19,9 @@ namespace Final_Project_Pemrograman_Lanjut.view
             }
         }
 
-        private static List<GoathProduct> GetProduct()
+        private List<DataProduct> GetProduct()
         {
-            return new List<GoathProduct>
-            {
-                new GoathProduct("Sapi", 2000000, "/img/sp1.png"),
-                new GoathProduct("Sapi", 1000000, "/img/sapi2.png"),
-                new GoathProduct("Sapi", 2000000, "/img/sapi3.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                new GoathProduct("Sapi", 5000000, "/img/sapi4.png"),
-                
-            };
+            return _controller.ShowProductGoath();
         }
     }
 }

@@ -1,12 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Controls;
+using Final_Project_Pemrograman_Lanjut.controller;
+using Final_Project_Pemrograman_Lanjut.model;
 
 namespace Final_Project_Pemrograman_Lanjut.view
 {
     public partial class ChickenPage : Page
     {
+        private ProdukControllerChicken _controller;
         public ChickenPage()
         {
+            _controller = new ProdukControllerChicken(this);
             InitializeComponent();
             var product = GetProduct();
             if (product.Count > 0)
@@ -15,14 +19,9 @@ namespace Final_Project_Pemrograman_Lanjut.view
             }
         }
 
-        private static List<GoathProduct> GetProduct()
+        private List<DataProduct> GetProduct()
         {
-            return new List<GoathProduct>()
-            {
-                new GoathProduct("Sapi", 2000000, "/img/sp1.png"),
-                new GoathProduct("Sapi", 1000000, "/img/sapi2.png"),
-                
-            };
+            return _controller.ShowProductChicken();
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using Final_Project_Pemrograman_Lanjut.model;
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using Final_Project_Pemrograman_Lanjut.model;
 using Final_Project_Pemrograman_Lanjut.view;
 
 namespace Final_Project_Pemrograman_Lanjut.controller
@@ -14,9 +17,19 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             _view = cowPage;
         }
 
-        public void ShowProductCow()
+        public List<DataProduct> ShowProductCow()
         {
-            _model.ShowProduct();
+            var ds = _model.ShowProduct();
+            var goathProducts = new List<DataProduct>();
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                var imageURI = String.Concat("/img/", Convert.ToString(dr["gambar"]));
+                goathProducts.Add(
+                    new DataProduct(Convert.ToString(dr["nama"]), Convert.ToInt32(dr["harga"]),
+                    imageURI));
+            }
+
+            return goathProducts;
         }
     }
 }

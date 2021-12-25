@@ -19,7 +19,8 @@ namespace Final_Project_Pemrograman_Lanjut.model
 
         public DataSet ShowProduct()
         {
-            return _template.Select("produk", "jenis='sapi'");
+            return _template.Select("produk", "jenis='Sapi'");
         }
+        
     }
 }

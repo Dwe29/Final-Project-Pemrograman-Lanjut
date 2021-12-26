@@ -17,10 +17,12 @@ D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman La
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\RegisterWindow.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\RegisterWindow.baml
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final Project Pemrograman Lanjut.csproj.AssemblyReference.cache
-D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\Final_Project_Pemrograman_Lanjut_Content.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\CowPage.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\CowPage.baml
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\ChickenPage.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\GoathPage.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\ChickenPage.baml
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\GoathPage.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\App.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyProductWindow.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyProductWindow.baml

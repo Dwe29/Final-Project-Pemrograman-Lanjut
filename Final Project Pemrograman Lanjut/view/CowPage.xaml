@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
       mc:Ignorable="d"
     d:DesignHeight="718" d:DesignWidth="894"
-      Title="CowPage" MinHeight="710" MinWidth="890" Language="idn-ID">
+      Title="CowPage" MinHeight="710" MinWidth="890" Language="idn-ID" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -14,17 +14,17 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <ScrollViewer Grid.Column="0" Grid.Row="0" Background="White">
+        <ScrollViewer Grid.Row="0" Grid.Column="0" Background="White">
             <StackPanel>
-                <StackPanel Margin="20 0">
+                <StackPanel Margin="10 0">
                     <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Border Margin="10" Width="150" Height="200">
-                                    <StackPanel>
-                                        <Border Width="130" Height="130" CornerRadius="5" Margin="5">
+                                <Border Margin="10,0" Width="160" Height="235">
+                                    <StackPanel Name="CowProduct" MouseDown="UIElement_OnMouseDown">
+                                        <Border Width="140" Height="140" CornerRadius="7" Margin="5,0">
                                             <Border.Effect>
-                                                <DropShadowEffect ShadowDepth="1" />
+                                                <DropShadowEffect ShadowDepth="2" />
                                             </Border.Effect>
                                             <Border.Background>
                                                 <ImageBrush ImageSource="{Binding Image}" />

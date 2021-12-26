@@ -5,42 +5,55 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
         mc:Ignorable="d"
-        Title="RegisterWindow" Height="450" Width="800">
-   <Grid Background="#E0F2C0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="280"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="270"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <Border Grid.Row="1" Grid.Column="1" BorderThickness="1" BorderBrush="White" 
-                CornerRadius="{Binding WindowCornerRadius,FallbackValue=10}" Background="White" Grid.ColumnSpan="2" Margin="156,0,105,0">
-            <StackPanel Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0,0">
-                <Label x:Name="lblJudul" Content="Daftar Sekarang" Foreground="#000000" FontSize="20" FontWeight="Bold" Margin="0,10,50,0" HorizontalAlignment="Right" Width="168"/>
-                <Canvas Background="White" Height="211" Width="250" Margin="0,0,8,10" HorizontalAlignment="Right">
-                    <StackPanel HorizontalAlignment="Center" Width="250" Height="210" Canvas.Top="10">
-                        <TextBox x:Name="txtUsername" Height="23" Margin="10,20,10,5"  />
-                        <PasswordBox x:Name="txtPassword" Height="23" Margin="10,15,10,1"  />
-                        <Button Content="Daftar" Width="100" Height="23" Background="#13591A" Foreground="White" 
-                                BorderBrush="Blue" Margin="75,25,75,5" Click="Btndaftar"/>
-                    </StackPanel>
-                    <Image x:Name="imgIconLogin" Source="Image\zyro-image.png" Height="302" Width="272" Canvas.Left="-374" Canvas.Top="-25"/>
-                    <Label Content="Dengan mendaftar, saya menyetujui" Canvas.Left="77" Canvas.Top="180" FontSize="6" FontStyle="Italic" Foreground="Black" Height="18"/>
-                    <Label Content="Sudah punya akun ?" Canvas.Left="78" Canvas.Top="157" FontSize="7" FontStyle="Italic" Foreground="Black" Height="22"/>
-                    <Label Content="serta" Canvas.Left="122" Canvas.Top="189" FontSize="6" FontStyle="Italic" Foreground="Black" Height="18"/>
-                    <Label x:Name="lblsyaratdanketentuan" Content="Syarat dan Ketentuan" Canvas.Left="63" Canvas.Top="189" FontSize="6" Foreground="#FF13591A" Grid.Column="2" Grid.Row="1"/>
-                    <Label x:Name="lblKebijakanprivasi" Content="Kebijakan Privasi" Canvas.Left="137" Canvas.Top="189" FontSize="6" Foreground="#FF13591A" Grid.Column="2" Grid.Row="1"/>
-                    <Label x:Name="lblMasuk" Content="Masuk" Canvas.Left="144" Canvas.Top="157" FontSize="7" Foreground="#FF13591A" Grid.Column="2" Grid.Row="1"/>
-                </Canvas>
+        Title="RegisterWindow" Height="450" Width="800" Background="#8acaa7" WindowState="Maximized">
+    <StackPanel Height="350" Width="600"
+                Background="#5b9978">
+        <Grid Margin="10" Height="330">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="330"/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <Image x:Name="imgIconLogin" Source="/img/zyro-image.png" Height="225" Width="277" Margin="29,50,28.6,0"/>
+                <Label Content="Hewan Berkualitas Hanya di Ter-nak"
+                       FontSize="16" Margin="30,-55,28.6,10"
+                       FontWeight="Bold"
+                       Padding="0"
+                       Foreground="White"/>
+                <Label Content="Gabung dan rasakan pelayanan yang kami berikan kepada anda."
+                       FontSize="10" Margin="24,-50,9.6,0"
+                       Padding="0" Height="16"
+                       Foreground="White"/>
             </StackPanel>
-        </Border>
-        <Label x:Name="lblTernak" Content="Hewan Berkualitas Hanya di Ter-nak" FontSize="18" Foreground="#13591A" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="32,0,142,14" Grid.ColumnSpan="2" Width="357" FontWeight="Bold"/>
-        <Label x:Name="lblGabung" Content="Gabung dan rasakan pelayanan yang kami berikan kepada anda." FontSize="12" Foreground="#13591A" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="54,0,207,0"/>
-
-    </Grid>
+            <StackPanel Grid.Column="1" Background="White">
+                   <Label Content="Sign Up"
+                          FontSize="25" Margin="85,20,72,10"
+                          FontWeight="Bold"
+                          Padding="0"/>
+                <Label Content="Username"
+                       FontSize="13" Margin="30,10,30,0"
+                       Padding="0"/>
+                <TextBox x:Name="txtUsername" Margin="30,3,30,0" FontSize="16"/>
+                <Label Content="Password"
+                       FontSize="13" Margin="30,10,30,0"
+                       Padding="0"/>
+                <PasswordBox x:Name="txtPassword"
+                             Margin="30,3,30,0"
+                             FontSize="16"/>
+                <Label x:Name="lblLupaSandi" Content="Lupa kata sandi ?"
+                       FontSize="10" Margin="30,0,30,0"
+                       Padding="0" Foreground="#FF13591A"/>
+                <Button x:Name="btnLogin" Click="Btndaftar"
+                        Width="120" Height="25"
+                        Margin="30,10,30,0" Background="#5b9978"
+                        Content="Daftar" Foreground="White"
+                        FontWeight="Bold"
+                        FontSize="14"/>
+                <Label x:Name="lblDaftar" Content="Sudah punya akan ? Masuk"
+                       FontSize="10" Margin="0,10,0,0"
+                       Padding="0" Foreground="#FF13591A"
+                       HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
 </Window>

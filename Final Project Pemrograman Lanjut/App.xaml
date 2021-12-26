@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut"
              StartupUri="view/MainWindow.xaml">
     <Application.Resources>
-        
+        <Style x:Key="MenuDockPanel" TargetType="DockPanel">
+            <Setter Property="Background" Value="#5B9978"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2d6a4c"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background" Value="#5B9978"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>

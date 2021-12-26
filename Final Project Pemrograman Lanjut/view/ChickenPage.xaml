@@ -16,13 +16,13 @@
         </Grid.ColumnDefinitions>
         <ScrollViewer Grid.Column="0" Grid.Row="0" Background="White">
             <StackPanel>
-                <StackPanel Margin="20 0">
-                    <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}">
+                <StackPanel Margin="10 0">
+                    <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}" >
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Border Margin="10" Width="150" Height="200">
-                                    <StackPanel>
-                                        <Border Width="130" Height="130" CornerRadius="7" Margin="5">
+                                <Border Margin="10, 0" Width="160" Height="235">
+                                    <StackPanel Name="ChickenProduct" MouseDown="UIElement_OnMouseDown">
+                                        <Border Width="140" Height="140" CornerRadius="7" Margin="5, 0">
                                             <Border.Effect>
                                                 <DropShadowEffect ShadowDepth="2" />
                                             </Border.Effect>
@@ -30,7 +30,7 @@
                                                 <ImageBrush ImageSource="{Binding Image}" />
                                             </Border.Background>
                                         </Border>
-                                        <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C}}"
+                                        <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C0}}"
                                                    FontSize="17" FontFamily="Franklin Gothic Medium" HorizontalAlignment="Center"/>
                                         <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15" HorizontalAlignment="Center"/>
                                     </StackPanel>

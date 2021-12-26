@@ -27,22 +27,22 @@
             <Label Grid.Row="0" Content="Ter-nak" FontSize="24" FontWeight="Bold" Foreground="White"
                    HorizontalContentAlignment="Center" />
 
-            <DockPanel Name="CowPage" Grid.Row="1" Height="50" MouseDown="CowPage_OnMouseDown">
+            <DockPanel Name="CowPage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}" MouseDown="CowPage_OnMouseDown">
                 <Label Content="Sapi" FontSize="14" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="GoathPage" Grid.Row="2" Height="50" MouseDown="GoathPage_OnMouseDown">
+            <DockPanel Name="GoathPage" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}" MouseDown="GoathPage_OnMouseDown">
                 <Label Content="Kambing" FontSize="14" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="ChickenPage" Grid.Row="3" Height="50" MouseDown="ChickenPage_OnMouseDown">
+            <DockPanel Name="ChickenPage" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}" MouseDown="ChickenPage_OnMouseDown">
                 <Label Content="Ayam" FontSize="14" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="Logout" Grid.Row="6" Height="50" MouseDown="Logout_OnMouseDown">
+            <DockPanel Name="Logout" Grid.Row="6" Height="50" Style="{DynamicResource MenuDockPanel}"  MouseDown="Logout_OnMouseDown">
                 <Label Content="LogOut" FontSize="14" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,4" />
             </DockPanel>

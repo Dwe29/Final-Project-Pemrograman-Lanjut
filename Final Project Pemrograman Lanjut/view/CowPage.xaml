@@ -5,15 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
       mc:Ignorable="d"
-    d:DesignHeight="718" d:DesignWidth="894"
-      Title="CowPage" MinHeight="710" MinWidth="890" Language="idn-ID" >
+      d:DesignHeight="718" d:DesignWidth="894"
+      Title="CowPage" MinHeight="710" MinWidth="890" Language="idn-ID">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
         <ScrollViewer Grid.Row="0" Grid.Column="0" Background="White">
             <StackPanel>
                 <StackPanel Margin="10 0">
@@ -31,8 +33,10 @@
                                             </Border.Background>
                                         </Border>
                                         <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C0}}"
-                                                   FontSize="17" FontFamily="Franklin Gothic Medium" HorizontalAlignment="Center" />
-                                        <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15" HorizontalAlignment="Center"/>
+                                                   FontSize="17" FontFamily="Franklin Gothic Medium"
+                                                   HorizontalAlignment="Center" />
+                                        <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15"
+                                                   HorizontalAlignment="Center" />
                                     </StackPanel>
                                 </Border>
                             </DataTemplate>

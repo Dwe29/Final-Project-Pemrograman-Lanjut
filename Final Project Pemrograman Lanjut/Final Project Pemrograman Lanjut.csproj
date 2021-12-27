@@ -55,10 +55,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="controller\AddUsersController.cs" />
+    <Compile Include="controller\BuyProductController.cs" />
     <Compile Include="controller\LoginUsersController.cs" />
     <Compile Include="controller\ProdukControllerChicken.cs" />
     <Compile Include="controller\ProdukControllerCow.cs" />
     <Compile Include="controller\ProdukControllerGoath.cs" />
+    <Compile Include="model\BuyProductModel.cs" />
     <Compile Include="model\DataProduct.cs" />
     <Compile Include="model\ModelTemplate.cs" />
     <Compile Include="model\ProdukModelChicken.cs" />

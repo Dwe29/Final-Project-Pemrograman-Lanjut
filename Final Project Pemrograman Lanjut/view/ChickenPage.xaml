@@ -11,13 +11,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
         <ScrollViewer Grid.Column="0" Grid.Row="0" Background="White">
             <StackPanel>
                 <StackPanel Margin="10 0">
-                    <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}" >
+                    <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <Border Margin="10, 0" Width="160" Height="235">
@@ -31,8 +33,10 @@
                                             </Border.Background>
                                         </Border>
                                         <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C0}}"
-                                                   FontSize="17" FontFamily="Franklin Gothic Medium" HorizontalAlignment="Center"/>
-                                        <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15" HorizontalAlignment="Center"/>
+                                                   FontSize="17" FontFamily="Franklin Gothic Medium"
+                                                   HorizontalAlignment="Center" />
+                                        <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15"
+                                                   HorizontalAlignment="Center" />
                                     </StackPanel>
                                 </Border>
                             </DataTemplate>

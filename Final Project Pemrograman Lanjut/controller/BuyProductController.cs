@@ -15,7 +15,7 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             _view = view;
         }
 
-        public DataSet ShowSingleData()
+        public DataSet ShowData()
         {
             var ds = _model.ShowData();
             return ds;

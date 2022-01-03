@@ -1,0 +1,21 @@
+﻿<Window x:Class="Final_Project_Pemrograman_Lanjut.view.BuyConfirmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
+        mc:Ignorable="d"
+        Title="BuyConfirmWindow" Height="200" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="BuyConfirmWindow_OnLoaded"> 
+    <Grid>
+        <StackPanel>
+            <Image Name="ImgIcon" Source="/img/ic_check_circle.png" Height="50" Width="50" Margin="10" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+            <Label Name="Lbl1" Content="Terima Kasih telah membeli Hewan" HorizontalContentAlignment="Center" FontSize="17"
+                   FontWeight="SemiBold" Padding="0" />
+            <Label Name="Lbl2" Content="Ternak di Toko Kami." HorizontalContentAlignment="Center" FontSize="17"
+                   FontWeight="SemiBold" Padding="0" />
+            <Label Name="Lbl3" Content="Pesanan akan kami antar secepatnya :)" HorizontalContentAlignment="Center" FontSize="17"
+                   Padding="0" Margin="0,15,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>

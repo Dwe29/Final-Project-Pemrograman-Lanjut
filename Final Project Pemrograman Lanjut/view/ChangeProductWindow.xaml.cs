@@ -9,6 +9,7 @@ namespace Final_Project_Pemrograman_Lanjut.view
         public static string alamat_pembeli;
         public static string nama_produk;
         public static int harga_produk;
+
         public ChangeProductWindow()
         {
             InitializeComponent();
@@ -23,6 +24,10 @@ namespace Final_Project_Pemrograman_Lanjut.view
         private void Btncancel_OnClick(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void BtnChange_OnClick(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

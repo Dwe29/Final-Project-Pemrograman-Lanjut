@@ -37,15 +37,21 @@
             <!-- <Button Name="BtnCancel" Margin="150,10" Content="Cancel" Click="BtnCancel_OnClick" Background="#5B9978" Foreground="White" -->
             <!--         FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/> -->
 
-            <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0">
-                <Button x:Name="btnBuy" Content="Simpan" Foreground="White" FontWeight="Bold" Width="100" Height="25"
-                        Background="Transparent" BorderThickness="0" FontSize="16" />
-            </Border>
-            <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0">
-                <Button x:Name="btncancel" Content="Batal" Foreground="White"
-                        FontWeight="Bold" Width="100" Height="25" Background="Transparent" BorderThickness="0"
-                        FontSize="16" Click="Btncancel_OnClick" />
-            </Border>
+            <!-- <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0"> -->
+            <!--     <Button x:Name="btnBuy" Content="Simpan" Foreground="White" FontWeight="Bold" Width="100" Height="25" -->
+            <!--             Background="Transparent" BorderThickness="0" FontSize="16" /> -->
+            <!-- </Border> -->
+            <!-- <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0"> -->
+            <!--     <Button x:Name="btncancel" Content="Batal" Foreground="White" -->
+            <!--             FontWeight="Bold" Width="100" Height="25" Background="Transparent" BorderThickness="0" -->
+            <!--             FontSize="16" Click="Btncancel_OnClick" /> -->
+            <!-- </Border> -->
+            
+            <Button Name="btnChange" Content="Beli" Foreground="White" Margin="0,15,0,0" FontWeight="Bold" Width="100" Height="25"
+                    Background="#5B9978" FontSize="16" Click="BtnChange_OnClick" />
+            <Button Name="btncancel" Content="Batal" Foreground="White" Margin="0,15,0,0"
+                    FontWeight="Bold" Width="100" Height="25" Background="#5B9978" FontSize="16"
+                    Click="Btncancel_OnClick" />
 
         </StackPanel>
     </Grid>

@@ -69,6 +69,9 @@
     <Compile Include="model\ProdukModelCow.cs" />
     <Compile Include="model\ProdukModelGoath.cs" />
     <Compile Include="model\UsersModel.cs" />
+    <Compile Include="view\BuyConfirmWindow.xaml.cs">
+      <DependentUpon>BuyConfirmWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\BuyProductWindow.xaml.cs">
       <DependentUpon>BuyProductWindow.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="view\BuyConfirmWindow.xaml" />
     <Page Include="view\BuyProductWindow.xaml" />
     <Page Include="view\ChangeProductWindow.xaml" />
     <Page Include="view\ChickenPage.xaml" />
@@ -203,6 +207,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\ic_history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ic_check_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ic_cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

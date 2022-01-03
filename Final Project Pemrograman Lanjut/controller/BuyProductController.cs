@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using Final_Project_Pemrograman_Lanjut.model;
 using Final_Project_Pemrograman_Lanjut.view;
 
@@ -33,12 +34,19 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             var result = _model.AddPurchase();
             if (result)
             {
-                MessageBox.Show("Pembelian Berhasil");
+                var confirm = new BuyConfirmWindow();
+                confirm.ShowDialog();
                 _view.Close();
             }
             else
             {
-                MessageBox.Show("Pembelian Gagal");
+                var confirm = new BuyConfirmWindow();
+                confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
+                confirm.Lbl1.Content = "Maaf Pembelian Gagal :(";
+                confirm.Lbl2.Content = "Pastikan anda mengisi data dengan benar";
+                confirm.Lbl3.Content = "Jika anda Mengalami kesulitan hubungi kami";
+                confirm.ShowDialog();
+                _view.Close();
             }
         }
     }

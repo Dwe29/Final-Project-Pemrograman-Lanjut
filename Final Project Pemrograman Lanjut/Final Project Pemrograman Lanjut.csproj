@@ -56,12 +56,14 @@
     </Compile>
     <Compile Include="controller\AddUsersController.cs" />
     <Compile Include="controller\BuyProductController.cs" />
+    <Compile Include="controller\HistoryController.cs" />
     <Compile Include="controller\LoginUsersController.cs" />
     <Compile Include="controller\ProdukControllerChicken.cs" />
     <Compile Include="controller\ProdukControllerCow.cs" />
     <Compile Include="controller\ProdukControllerGoath.cs" />
     <Compile Include="model\BuyProductModel.cs" />
     <Compile Include="model\DataProduct.cs" />
+    <Compile Include="model\HistoryModel.cs" />
     <Compile Include="model\ModelTemplate.cs" />
     <Compile Include="model\ProdukModelChicken.cs" />
     <Compile Include="model\ProdukModelCow.cs" />
@@ -69,6 +71,9 @@
     <Compile Include="model\UsersModel.cs" />
     <Compile Include="view\BuyProductWindow.xaml.cs">
       <DependentUpon>BuyProductWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\ChangeProductWindow.xaml.cs">
+      <DependentUpon>ChangeProductWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\ChickenPage.xaml.cs">
       <DependentUpon>ChickenPage.xaml</DependentUpon>
@@ -78,6 +83,9 @@
     </Compile>
     <Compile Include="view\GoathPage.xaml.cs">
       <DependentUpon>GoathPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\HistoryPage.xaml.cs">
+      <DependentUpon>HistoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -109,9 +117,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="view\BuyProductWindow.xaml" />
+    <Page Include="view\ChangeProductWindow.xaml" />
     <Page Include="view\ChickenPage.xaml" />
     <Page Include="view\CowPage.xaml" />
     <Page Include="view\GoathPage.xaml" />
+    <Page Include="view\HistoryPage.xaml" />
     <Page Include="view\LoginWindow.xaml" />
     <Page Include="view\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -190,6 +200,9 @@
     <Resource Include="img\sp1.png" />
     <Resource Include="img\zyro-image.png" />
     <Resource Include="img\iconSiswa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ic_history.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

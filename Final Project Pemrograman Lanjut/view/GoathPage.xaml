@@ -17,37 +17,42 @@
         </Grid.ColumnDefinitions>
 
         <ScrollViewer Grid.Column="0" Grid.Row="0" Background="White">
-            <StackPanel>
-                <StackPanel Margin="10 ,0">
-                    <ItemsControl Name="ListViewProducts" ItemsSource="{Binding Product}">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <Border Margin="10, 0" Width="160" Height="235">
-                                    <StackPanel Name="GoathProduct" MouseDown="UIElement_OnMouseDown">
-                                        <Border Width="140" Height="140" CornerRadius="7" Margin="5, 0">
-                                            <Border.Effect>
-                                                <DropShadowEffect ShadowDepth="2" />
-                                            </Border.Effect>
-                                            <Border.Background>
-                                                <ImageBrush ImageSource="{Binding Image}" />
-                                            </Border.Background>
-                                        </Border>
-                                        <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C0}}"
-                                                   FontSize="17" FontFamily="Franklin Gothic Medium"
-                                                   HorizontalAlignment="Center" />
-                                        <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15"
-                                                   HorizontalAlignment="Center" />
-                                    </StackPanel>
-                                </Border>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                        <ItemsControl.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel />
-                            </ItemsPanelTemplate>
-                        </ItemsControl.ItemsPanel>
-                    </ItemsControl>
-                </StackPanel>
+            <StackPanel Margin="10 0">
+                <ListView Name="ListViewProducts" ItemsSource="{Binding Product}" BorderThickness="0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="10,0" Width="160" Height="235">
+                                <StackPanel Name="CowProduct" MouseDown="UIElement_OnMouseDown">
+                                    <Border Width="140" Height="140" CornerRadius="7" Margin="5,0">
+                                        <Border.Effect>
+                                            <DropShadowEffect ShadowDepth="2" />
+                                        </Border.Effect>
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding Image}" />
+                                        </Border.Background>
+                                    </Border>
+                                    <TextBlock Margin="5" Text="{Binding  Value, StringFormat={}{0:C0}}"
+                                               FontSize="17" FontFamily="Franklin Gothic Medium"
+                                               HorizontalAlignment="Center" />
+                                    <TextBlock Margin="5 0" Text="{Binding Name}" FontSize="15"
+                                               HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <!-- <WrapPanel Orientation="Vertical" /> -->
+                            <WrapPanel
+                                Width="{Binding (FrameworkElement.ActualWidth), 
+                            RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}"
+                                ItemWidth="{Binding (ListView.View).ItemWidth, RelativeSource={RelativeSource AncestorType=ListView}}"
+                                MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"
+                                ItemHeight="{Binding (ListView.View).ItemHeight, 
+                            RelativeSource={RelativeSource AncestorType=ListView}}" />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
             </StackPanel>
         </ScrollViewer>
     </Grid>

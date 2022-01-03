@@ -23,10 +23,10 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             var dataProducts = new List<DataProduct>();
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                var imageURI = string.Concat("/img/", Convert.ToString(dr["gambar"]));
+                var imageUri = string.Concat("/img/", Convert.ToString(dr["gambar"]));
                 dataProducts.Add(
-                    new DataProduct( Convert.ToInt32(dr["id"]), Convert.ToString(dr["nama"]), Convert.ToInt32(dr["harga"]),
-                        imageURI));
+                    new DataProduct( Convert.ToInt32(dr["id_produk"]), Convert.ToString(dr["nama"]), Convert.ToInt32(dr["harga"]),
+                        imageUri));
             }
 
             return dataProducts;

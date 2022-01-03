@@ -9,6 +9,8 @@ namespace Final_Project_Pemrograman_Lanjut.model
         public string nama { get; set; }
         public string password { get; set; }
 
+        public static string UserName;
+
         public UsersModel()
         {
             _template = new ModelTemplate();
@@ -22,6 +24,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
 
             if (ds.Tables[0].Rows.Count > 0)
             {
+                UserName = ds.Tables[0].Rows[0][1].ToString();
                 result = true;
             }
             else

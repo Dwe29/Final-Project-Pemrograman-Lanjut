@@ -1,4 +1,4 @@
-﻿<Window x:Class="Final_Project_Pemrograman_Lanjut.view.MainWindow"
+﻿ <Window x:Class="Final_Project_Pemrograman_Lanjut.view.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,7 +9,7 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="140" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
@@ -65,13 +65,14 @@
                 </Grid.ColumnDefinitions>
 
                 <DockPanel Grid.Column="0">
-                    <TextBox Name="TbSearch" Text="Search Item" Foreground="Gray" Height="20" Margin="20,0,0,0"
-                             GotFocus="TbSearch_OnGotFocus" />
+                    <TextBox Name="TbSearch" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25" Margin="20,0,0,0"
+                             GotFocus="TbSearch_OnGotFocus" LostFocus="TbSearch_OnLostFocus" Focusable="True"/>
                 </DockPanel>
 
                 <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">
-                    <Label Content="{Binding User}" VerticalContentAlignment="Center" />
+                    <Image Name="ImgHistory" Source="/img/ic_history.png" Width="28" Height="28" Margin="0,0,15,0" MouseDown="ImgHistory_OnMouseDown"/>          
                     <Image Source="/img/ic_account.png" Width="25" Height="25" />
+                    <Label Name="LblUser" Content="User" VerticalContentAlignment="Center" />
                 </DockPanel>
             </Grid>
 

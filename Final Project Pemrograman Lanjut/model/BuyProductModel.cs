@@ -36,6 +36,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
         {
             var data = "'" + nama_pembeli + "','" + alamat_pembeli + "','" + nama_produk + "','" + harga_produk +
                        "','" + no_telp + "'";
+            
             return _template.Insert("pembelian", data);
         }
     }

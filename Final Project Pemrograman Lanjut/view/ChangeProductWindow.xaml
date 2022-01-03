@@ -1,0 +1,52 @@
+﻿<Window x:Class="Final_Project_Pemrograman_Lanjut.view.ChangeProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
+        mc:Ignorable="d"
+        Title="ChangeProductWindow" Height="460" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Language="idn-ID">
+    <Grid>
+        <StackPanel>
+            <Label Name="LblProduct" Content="Ubah Riwayat Pembelian" HorizontalContentAlignment="Center"
+                   FontSize="20"
+                   Margin="10" FontWeight="SemiBold" />
+
+            <Label Content="Nama Pembeli" Margin="65,10,65,-5" Padding="0" />
+            <TextBox Name="TbNameCustomer" Margin="65,10,65,10"
+                     FontSize="16" />
+
+            <Label Content="Nomor Pembeli" Margin="65,0,65,-5" Padding="0" />
+            <TextBox Name="TbNomor" Margin="65,10,65,10"
+                     FontSize="16" />
+
+            <Label Content="Alamat Pembeli" Margin="65,0,65,-5" Padding="0" />
+            <TextBox Name="TbAlamat" Margin="65,10,65,10"
+                     FontSize="16" />
+
+            <Label Content="Nama Produk" Margin="65,0,65,-5" Padding="0" />
+            <TextBox Name="TbNameProduct" Margin="65,10,65,10"
+                     FontSize="16" />
+
+            <Label Content="Harga Produk" Margin="65,0,65,-5" Padding="0" />
+            <TextBox Name="TbHarga" Margin="65,10,65,10"
+                     FontSize="16" />
+
+            <!-- <Button Name="BtnBeli" Margin="150,10" Content="Buy" Click="BtnCancel_OnClick" Background="#5B9978" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" /> -->
+            <!-- <Button Name="BtnCancel" Margin="150,10" Content="Cancel" Click="BtnCancel_OnClick" Background="#5B9978" Foreground="White" -->
+            <!--         FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/> -->
+
+            <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0">
+                <Button x:Name="btnBuy" Content="Simpan" Foreground="White" FontWeight="Bold" Width="100" Height="25"
+                        Background="Transparent" BorderThickness="0" FontSize="16" />
+            </Border>
+            <Border CornerRadius="10" Height="25" Width="100" Background="#5B9978" Margin="0,20,0,0">
+                <Button x:Name="btncancel" Content="Batal" Foreground="White"
+                        FontWeight="Bold" Width="100" Height="25" Background="Transparent" BorderThickness="0"
+                        FontSize="16" Click="Btncancel_OnClick" />
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</Window>

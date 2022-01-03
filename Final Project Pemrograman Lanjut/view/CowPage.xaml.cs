@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Final_Project_Pemrograman_Lanjut.controller;
@@ -8,12 +9,13 @@ namespace Final_Project_Pemrograman_Lanjut.view
 {
     public partial class CowPage : Page
     {
-        private controller.ProdukControllerCow _produkControllerCow;
-        
+        private ProdukControllerCow _produkControllerCow;
+        //private BuyProductController _buyProductController;
+
         public CowPage()
         {
             _produkControllerCow = new ProdukControllerCow(this);
-            
+
             InitializeComponent();
             var product = GetProduct();
             if (product.Count > 0)
@@ -21,7 +23,6 @@ namespace Final_Project_Pemrograman_Lanjut.view
                 ListViewProducts.ItemsSource = product;
             }
         }
-        
 
         private List<DataProduct> GetProduct()
         {
@@ -32,6 +33,21 @@ namespace Final_Project_Pemrograman_Lanjut.view
         {
             var buy = new BuyProductWindow();
             buy.ShowDialog();
+            //_buyProductController.ShowData();
+
+            // AddData();
+        }
+
+        // void AddData(Image img, TextBlock lblProduct)
+        // {
+        //     BuyProductWindow.Image = img.Source.ToString();
+        //     BuyProductWindow.Product = lblProduct.Text;
+        //     var form = new BuyProductWindow();
+        //     form.Show();
+        // }
+        private void ListViewProducts_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

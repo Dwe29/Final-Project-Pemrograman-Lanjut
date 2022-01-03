@@ -25,6 +25,7 @@ namespace Final_Project_Pemrograman_Lanjut.controller
             if (result)
             {
                 var main = new MainWindow();
+                main.LblUser.Content = UsersModel.UserName;
                 main.Show();
                 _loginWindow.Close();
             }

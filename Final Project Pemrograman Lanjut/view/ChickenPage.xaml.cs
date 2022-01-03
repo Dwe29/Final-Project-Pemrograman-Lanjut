@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Final_Project_Pemrograman_Lanjut.controller;
@@ -30,6 +31,14 @@ namespace Final_Project_Pemrograman_Lanjut.view
             var buy = new BuyProductWindow();
             buy.ShowDialog();
             
+        }
+
+        private void ListViewProducts_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // var item = ListViewProducts.SelectedItem;
+            // BuyProductWindow.Product = (ListViewProducts.Items.Add(item) as TextBlock)?.Text;
+            // BuyProductWindow.Image = ListViewProducts.Items.Add(item).ToString();
+
         }
     }
 }

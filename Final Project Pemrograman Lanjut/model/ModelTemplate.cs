@@ -24,10 +24,32 @@ namespace Final_Project_Pemrograman_Lanjut.model
             GetConnection();
         }
         
+        public DataSet SelectData(string table, string query)
+        {
+            var ds = new DataSet();
+
+            try
+            {
+                _conn.Open();
+                _command = new SqlCommand();
+                _command.Connection = _conn;
+                _command.CommandType = CommandType.Text;
+                _command.CommandText = query;
+                var sda = new SqlDataAdapter(_command);
+                sda.Fill(ds, table);
+            }
+            catch (SqlException)
+            {
+                ds = null;
+            }
+
+            _conn.Close();
+            return ds;
+        }
 
         public DataSet Select(string table, string query)
         {
-            DataSet ds = new DataSet();
+            var ds = new DataSet();
         
             try
             {

@@ -13,7 +13,7 @@ namespace Final_Project_Pemrograman_Lanjut.view
         public MainWindow()
         {
             InitializeComponent();
-
+            TbSearch.Visibility = Visibility.Visible;
             // var check = new ModelTemplate();
             // check.CheckConn();
         }
@@ -27,16 +27,19 @@ namespace Final_Project_Pemrograman_Lanjut.view
 
         private void CowPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
+            TbSearch.Visibility = Visibility.Visible;
             FrmMain.Navigate(new CowPage());
         }
 
         private void GoathPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-           FrmMain.Navigate(new GoathPage());
+            TbSearch.Visibility = Visibility.Visible;
+            FrmMain.Navigate(new GoathPage());
         }
 
         private void ChickenPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
+            TbSearch.Visibility = Visibility.Visible;
             FrmMain.Navigate(new ChickenPage());
         }
 
@@ -45,6 +48,18 @@ namespace Final_Project_Pemrograman_Lanjut.view
             var loginWindow = new LoginWindow();
             loginWindow.Show();
             Close();
+        }
+
+        private void ImgHistory_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FrmMain.Navigate(new HistoryPage());
+            TbSearch.Visibility = Visibility.Hidden;
+        }
+
+        private void TbSearch_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            TbSearch.Foreground = Brushes.Gray;
+            TbSearch.Text = "Cari Produk";
         }
     }
 }

@@ -6,10 +6,10 @@
         public string Name { get; set; }
         public double Value { get; set; }
         public string Image { get; set; }
-
-        public DataProduct(int id, string name, double value, string image)
+        
+        public DataProduct(int id_produk, string name, double value, string image)
         {
-            Id = id;
+            Id = id_produk;
             Name = name;
             Value = value;
             Image = image;

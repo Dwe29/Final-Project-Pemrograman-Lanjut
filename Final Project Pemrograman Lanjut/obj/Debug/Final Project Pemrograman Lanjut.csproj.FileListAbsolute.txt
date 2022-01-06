@@ -26,9 +26,11 @@ D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman La
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\App.baml
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyProductWindow.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyProductWindow.baml
-D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\HistoryPage.g.cs
-D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\HistoryPage.baml
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\ChangeProductWindow.g.cs
 D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\ChangeProductWindow.baml
-D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyConfirmSuccessWindow.g.cs
-D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyConfirmSuccessWindow.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyConfirmWindow.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\BuyConfirmWindow.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\DataPembeliPage.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\DataPembeliPage.baml
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\DataProdukPage.g.cs
+D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\obj\Debug\view\DataProdukPage.baml

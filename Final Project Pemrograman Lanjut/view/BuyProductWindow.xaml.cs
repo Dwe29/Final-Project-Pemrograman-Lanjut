@@ -13,18 +13,18 @@ namespace Final_Project_Pemrograman_Lanjut.view
     public partial class BuyProductWindow : Window
     {
         private BuyProductController _controller;
-        // public static string Product;
-        // public static string Image;
+        public static string Product;
+        public static string Image;
 
         public BuyProductWindow()
         {
             InitializeComponent();
             _controller = new BuyProductController(this);
-            // LblProduct.Content = Product;
-            //
-            // var path = "/img/" + Image;
-            // var uri = new Uri(path, UriKind.Relative);
-            // ImgProduct.Source = new BitmapImage(uri);
+            LblProduct.Content = Product;
+            
+            var path = "/img/" + Image;
+            var uri = new Uri(path, UriKind.Relative);
+            ImgProduct.Source = new BitmapImage(uri);
         }
 
 

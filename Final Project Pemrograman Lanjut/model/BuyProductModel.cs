@@ -7,6 +7,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
     {
         private ModelTemplate _template;
 
+        public int id_pembelian { get; set; }
         public string nama_pembeli { get; set; }
         public string alamat_pembeli { get; set; }
         public string nama_produk { get; set; }
@@ -23,20 +24,11 @@ namespace Final_Project_Pemrograman_Lanjut.model
             _template = new ModelTemplate();
         }
 
-        // public DataSet ShowData()
-        // {
-        //     DataSet ds;
-        //     ds = _template.Select("produk",
-        //         "id_produk = '" + Id + "', nama = '" + Name + "', gambar = '" + Image + "', jenis = '" + Jenis + "'");
-        //
-        //     return ds;
-        // }
-
         public bool AddPurchase()
         {
             var data = "'" + nama_pembeli + "','" + alamat_pembeli + "','" + nama_produk + "','" + harga_produk +
                        "','" + no_telp + "'";
-            
+
             return _template.Insert("pembelian", data);
         }
     }

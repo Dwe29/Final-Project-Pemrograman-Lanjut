@@ -23,7 +23,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
         {
             GetConnection();
         }
-        
+
         public DataSet SelectData(string table, string query)
         {
             var ds = new DataSet();
@@ -47,10 +47,10 @@ namespace Final_Project_Pemrograman_Lanjut.model
             return ds;
         }
 
-        public DataSet Select(string table, string query)
+        public DataSet Select(string table, string condition)
         {
             var ds = new DataSet();
-        
+
             try
             {
                 _conn.Open();
@@ -58,24 +58,24 @@ namespace Final_Project_Pemrograman_Lanjut.model
                 _command.Connection = _conn;
                 _command.CommandType = CommandType.Text;
 
-                if (query == null)
+                if (condition == null)
                 {
                     _command.CommandText = "SELECT * FROM " + table;
                 }
                 else
                 {
-                    _command.CommandText = "SELECT * FROM " + table + " WHERE " + query;
+                    _command.CommandText = "SELECT * FROM " + table + " WHERE " + condition;
                 }
 
                 var sda = new SqlDataAdapter(_command);
                 sda.Fill(ds, table);
             }
-            
+
             catch (SqlException)
             {
                 ds = null;
             }
-        
+
             _conn.Close();
             return ds;
         }
@@ -99,7 +99,53 @@ namespace Final_Project_Pemrograman_Lanjut.model
                 Console.WriteLine(e);
                 _result = false;
             }
-            
+
+            _conn.Close();
+            return _result;
+        }
+
+        public bool Update(string table, string data, string condition)
+        {
+            _result = false;
+
+            try
+            {
+                var query = "UPADETE " + table + " SET " + data + " WHERE " + condition;
+                _conn.Open();
+                _command = new SqlCommand();
+                _command.Connection = _conn;
+                _command.CommandText = query;
+                _command.ExecuteNonQuery();
+                _result = true;
+            }
+            catch (SqlException)
+            {
+                _result = false;
+            }
+
+            _conn.Close();
+            return _result;
+        }
+
+        public bool Delete(string table, string condition)
+        {
+            _result = false;
+
+            try
+            {
+                var query = "DELETE FROM " + table + " WHERE " + condition;
+                _conn.Open();
+                _command = new SqlCommand();
+                _command.Connection = _conn;
+                _command.CommandText = query;
+                _command.ExecuteNonQuery();
+                _result = true;
+            }
+            catch (SqlException)
+            {
+                _result = false;
+            }
+
             _conn.Close();
             return _result;
         }
@@ -115,7 +161,7 @@ namespace Final_Project_Pemrograman_Lanjut.model
         //     catch (Exception e)
         //     {
         //         MessageBox.Show("Not Connected " + e);
-        //     }
+        //     }LUIwU
         // }
     }
 }

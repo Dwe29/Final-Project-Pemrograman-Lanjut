@@ -56,14 +56,16 @@
     </Compile>
     <Compile Include="controller\AddUsersController.cs" />
     <Compile Include="controller\BuyProductController.cs" />
-    <Compile Include="controller\HistoryController.cs" />
+    <Compile Include="controller\DataPembeliController.cs" />
+    <Compile Include="controller\DataProdukController.cs" />
     <Compile Include="controller\LoginUsersController.cs" />
     <Compile Include="controller\ProdukControllerChicken.cs" />
     <Compile Include="controller\ProdukControllerCow.cs" />
     <Compile Include="controller\ProdukControllerGoath.cs" />
     <Compile Include="model\BuyProductModel.cs" />
     <Compile Include="model\DataProduct.cs" />
-    <Compile Include="model\HistoryModel.cs" />
+    <Compile Include="model\DataPembeliModel.cs" />
+    <Compile Include="model\DataProdukModel.cs" />
     <Compile Include="model\ModelTemplate.cs" />
     <Compile Include="model\ProdukModelChicken.cs" />
     <Compile Include="model\ProdukModelCow.cs" />
@@ -84,11 +86,14 @@
     <Compile Include="view\CowPage.xaml.cs">
       <DependentUpon>CowPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\DataProdukPage.xaml.cs">
+      <DependentUpon>DataProdukPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\GoathPage.xaml.cs">
       <DependentUpon>GoathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="view\HistoryPage.xaml.cs">
-      <DependentUpon>HistoryPage.xaml</DependentUpon>
+    <Compile Include="view\DataPembeliPage.xaml.cs">
+      <DependentUpon>DataPembeliPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -124,8 +129,9 @@
     <Page Include="view\ChangeProductWindow.xaml" />
     <Page Include="view\ChickenPage.xaml" />
     <Page Include="view\CowPage.xaml" />
+    <Page Include="view\DataProdukPage.xaml" />
     <Page Include="view\GoathPage.xaml" />
-    <Page Include="view\HistoryPage.xaml" />
+    <Page Include="view\DataPembeliPage.xaml" />
     <Page Include="view\LoginWindow.xaml" />
     <Page Include="view\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

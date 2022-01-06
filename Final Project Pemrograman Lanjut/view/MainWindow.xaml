@@ -1,4 +1,4 @@
-﻿ <Window x:Class="Final_Project_Pemrograman_Lanjut.view.MainWindow"
+﻿<Window x:Class="Final_Project_Pemrograman_Lanjut.view.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,52 +9,73 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="150" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <Grid Background="#5B9978">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
+                <RowDefinition Height="55" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="55" />
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Content="Ter-nak" FontSize="24" FontWeight="Bold" Foreground="White"
-                   HorizontalContentAlignment="Center" />
+                   HorizontalAlignment="Center" />
 
-            <DockPanel Name="CowPage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="HomePage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}"
+                       MouseDown="HomePage_OnMouseDown">
+                <Label Content="Home" FontSize="16" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="DataProduk" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}"
+                       MouseDown="DataProduk_OnMouseDown">
+                <Label Content="Data Produk" FontSize="16" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="DataPembeli" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}"
+                       MouseDown="DataPembeli_OnMouseDown">
+                <Label Content="Data Pembeli" FontSize="16" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <DockPanel Name="CowPage" Grid.Row="4" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="CowPage_OnMouseDown">
-                <Label Content="Sapi" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                <Label Content="Sapi" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="GoathPage" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="GoathPage" Grid.Row="5" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="GoathPage_OnMouseDown">
-                <Label Content="Kambing" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                <Label Content="Kambing" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="ChickenPage" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="ChickenPage" Grid.Row="6" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="ChickenPage_OnMouseDown">
-                <Label Content="Ayam" FontSize="14" Foreground="White" FontWeight="SemiBold"
+                <Label Content="Ayam" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="Logout" Grid.Row="6" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="Logout" Grid.Row="9" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="Logout_OnMouseDown">
-                <Label Content="LogOut" FontSize="14" Foreground="White" FontWeight="SemiBold"
-                       VerticalContentAlignment="Center" Margin="10,0,0,4" />
+                <Label Content="LogOut" FontSize="16" Foreground="White" FontWeight="SemiBold"
+                       VerticalContentAlignment="Center" Margin="10,0,0,10" />
             </DockPanel>
         </Grid>
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="45" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
@@ -65,12 +86,14 @@
                 </Grid.ColumnDefinitions>
 
                 <DockPanel Grid.Column="0">
-                    <TextBox Name="TbSearch" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25" Margin="20,0,0,0"
-                             GotFocus="TbSearch_OnGotFocus" LostFocus="TbSearch_OnLostFocus" Focusable="True"/>
+                    <TextBox Name="TbSearch" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25"
+                             Margin="20,0,0,0"
+                            GotKeyboardFocus="TbSearch_OnGotKeyboardFocus"/>
                 </DockPanel>
 
                 <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">
-                    <Image Name="ImgHistory" Source="/img/ic_history.png" Width="28" Height="28" Margin="0,0,15,0" MouseDown="ImgHistory_OnMouseDown"/>          
+                    <Image Name="ImgHistory" Source="/img/ic_history.png" Width="28" Height="28" Margin="0,0,15,0"
+                           MouseDown="ImgHistory_OnMouseDown" />
                     <Image Source="/img/ic_account.png" Width="25" Height="25" />
                     <Label Name="LblUser" Content="User" VerticalContentAlignment="Center" />
                 </DockPanel>

@@ -1,0 +1,42 @@
+﻿<Page x:Class="Final_Project_Pemrograman_Lanjut.view.DataProdukPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Final_Project_Pemrograman_Lanjut.view"
+      mc:Ignorable="d"
+      d:DesignHeight="718" d:DesignWidth="894"
+      Title="GoathPage" MinHeight="710" MinWidth="890">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55" />
+            <RowDefinition />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Data Produk" FontSize="26" FontWeight="SemiBold"
+               HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <DataGrid Grid.Row="1" ColumnWidth="*" Name="DgProduk" ItemsSource="{Binding}" Background="White"
+                  Margin="0,10"
+                  Style="{DynamicResource DataGridStyle}" 
+                  IsReadOnly="True" />
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+            </Grid.ColumnDefinitions>
+            
+            <Button Name="BtnTambah" Grid.Column="1" Content="Tambah" FontSize="14" Width="80" Height="30"
+                    HorizontalAlignment="Left" Foreground="White" Background="#5B9978" Click="BtnTambah_OnClick"/>
+
+            <Button Name="BtnUbah" Grid.Column="2" Content="Ubah" FontSize="14" Width="80" Height="30"
+                    HorizontalAlignment="Left" Foreground="White" Background="#5B9978" />
+
+            <Button Name="BtnHapus" Grid.Column="3" Content="Hapus" FontSize="14" Width="80" Height="30"
+                    HorizontalAlignment="Left" Foreground="White" Background="#5B9978" />
+        </Grid>
+
+    </Grid>
+</Page>

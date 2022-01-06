@@ -18,28 +18,21 @@ namespace Final_Project_Pemrograman_Lanjut.view
             // check.CheckConn();
         }
 
-        private void TbSearch_OnGotFocus(object sender, RoutedEventArgs e)
-        {
-            TbSearch.Foreground = Brushes.Black;
-            TbSearch.Text = "";
-        }
-
-
         private void CowPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearch.Visibility = Visibility.Visible;
+            TbSearchProduk();
             FrmMain.Navigate(new CowPage());
         }
 
         private void GoathPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearch.Visibility = Visibility.Visible;
+            TbSearchProduk();
             FrmMain.Navigate(new GoathPage());
         }
 
         private void ChickenPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearch.Visibility = Visibility.Visible;
+            TbSearchProduk();
             FrmMain.Navigate(new ChickenPage());
         }
 
@@ -52,14 +45,32 @@ namespace Final_Project_Pemrograman_Lanjut.view
 
         private void ImgHistory_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            FrmMain.Navigate(new HistoryPage());
-            TbSearch.Visibility = Visibility.Hidden;
+            FrmMain.Navigate(new DataPembeliPage());
         }
 
-        private void TbSearch_OnLostFocus(object sender, RoutedEventArgs e)
+        private void DataPembeli_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearch.Foreground = Brushes.Gray;
+            TbSearch.Text = "Cari Pembeli";
+            FrmMain.Navigate(new DataPembeliPage());
+        }
+
+        private void HomePage_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+        }
+
+        private void DataProduk_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FrmMain.Navigate(new DataProdukPage());
+        }
+
+        private void TbSearchProduk()
+        {
             TbSearch.Text = "Cari Produk";
+        }
+
+        private void TbSearch_OnGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            TbSearch.Text = "";
         }
     }
 }
